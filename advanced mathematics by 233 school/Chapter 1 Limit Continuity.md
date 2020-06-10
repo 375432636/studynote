@@ -60,19 +60,53 @@ $$
 
 [视频连接](https://youtu.be/5giYv5n616E?t=2668)
 $$
-求lim_{x\to\infty}\frac{\sin x}{x}\\
-\because lim_{x\to\infty}\frac{\sin x}{x}=lim_{x\to\infty}\frac{1}{x}\sin x\\
-\therefore lim_{x\to\infty}\frac{1}{x}=0 \\
-\therefore lim_{x\to\infty}\frac{\sin x}{x}=0
+求\lim_{x\to\infty}\frac{\sin x}{x}\\
+\because \lim_{x\to\infty}\frac{\sin x}{x}=\lim_{x\to\infty}\frac{1}{x}\sin x\\
+\therefore \lim_{x\to\infty}\frac{1}{x}=0 \\
+而当x\to\infty, \frac{1}{x}是无穷小量 \\
+\sin x是有界函数\\
+\therefore \lim_{x\to\infty}\frac{\sin x}{x}=0
 $$
 思路: 
 
 1. 不可以直接带入, 条件为无穷
 2. 法则用不了, 拆分为`sinx` and `x`, 其中`sinx`条件下没有极限
 3. 可以将其看作`sinx` and `1/x`的乘积
+4. 两个条件一定要说清楚, 哪个是无穷小量, 哪个是有界函数
 
+#### 例题4:
+
+$$
+求极限 \lim_{x\to2}(x-2)\sin\frac{1}{x-2}\\
+\because \lim_{x\to2}(x-2)=0\\
+\therefore x-2在x\to2是无穷小\\
+\because \sin\frac{1}{x-2}是有界函数\\
+\therefore \lim_{x\to2}(x-2)\sin\frac{1}{x-2}=0
+$$
+
+思路:
+
+1. 不可以直接带入, x-2=0, 其中一项不成立都不能带入. 0x一个没有意义的数不一定是0
+2. 法则也不可, 因为sin(1/x-2)是没有极限的. 
+3. sin(1/x-2)是有界函数
 
 ### 4.4 三种特例
+
+#### 1. 通过因式分解
+
+#### 例题5:
+
+$$
+\lim_{x\to1}\frac{x-1}{x^2-1}\\
+原式 = \lim_{x\to1}\frac{x-1}{x^2-1}=\lim_{x\to1}\frac{x-1}{(x-1)(x+1)}\\
+=\lim_{x\to1}\frac{1}{1+x}=\frac{1}{2}
+$$
+
+思路:
+
+1. 不能直接带入
+2. 无穷小和无穷大的倒数关系也不能用
+3. 也存在有界函数
 
 ### 4.5 两个重要极限
 
