@@ -215,6 +215,7 @@ $$
 2. 不能用法则
 3. 无穷小量和有界函数, 没法做, 1/2x 是无穷大
 4. 三种特例, 不需要因式分解, 不含根号不能有理化, 不是趋近于无穷大不能使用有理分式
+5. 利用法则进行分解, **乘积的极限等于极限的乘积**, 函数体\*2 = 极限\*2
 
 #### 例题9:
 
@@ -228,6 +229,53 @@ $$
 &\lim_{x\to0}\frac{\tan2x}{x}&=\lim_{x\to0}\frac{sin2x}{x}\cdot\frac{1}{\cos2x}\\
 &&=2\lim_{x\to0}\frac{\sin2x}{2x}\cdot\frac{1}{\cos2x}\\
 &&=2
+\end{eqnarray}
+$$
+
+#### 例题10:
+
+[视频连接]([https://youtu.be/5giYv5n616E?t=5189)
+$$
+求\lim_{x\to0}\frac{\sin^2x}{x}
+$$
+
+$$
+\begin{eqnarray}
+&\lim_{x\to0}\frac{\sin^2x}{x}&=\lim_{x\to0}\frac{\sin x}{x}\cdot\lim_{x\to0}\sin x\\
+&&=1\cdot0\\
+&&=0
+\end{eqnarray}
+$$
+
+思路:
+
+1. 利用法则, **乘积的极限等于极限的乘积**, 
+2. 利用第一个重要极限求第一个极限, 利用带入法求第二个极限
+
+#### 2. 第二种重要极限
+
+$$
+\lim_{}(1+\frac{1}{A})^B=e
+$$
+
+条件:
+
+1. 函数一定是1+
+2. (1/A)*B = 1, 即A与B互为倒数
+
+#### 例题11:
+
+[视频连接](https://youtu.be/5giYv5n616E?t=5583)
+$$
+求\lim_{x\to\infty}(1-\frac{2}{x})^x
+$$
+
+$$
+\begin{eqnarray}
+&&\lim_{x\to\infty}(1-\frac{2}{x})^x\\
+&=&\lim_{x\to\infty}(1+\frac{-2}{x})^2\\
+&=&[\lim_{x\to\infty}(1+\frac{-2}{x})^{-\frac{x}{2}}]^{-2}\\
+&=&e^{-2}
 \end{eqnarray}
 $$
 
